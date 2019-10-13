@@ -1,0 +1,56 @@
+.beige-background-color {
+  background-color: beige !important;
+}
+
+.site-background {
+  background-image: url("https://www.tokkoro.com/picsup/3101847-acoustic_classic_entertainment_fingerboard_folk_fretboard_hawaiian_instrument_leisure_music_musical_snail_song_strings_traditional_ukes_ukulele_vintage_wood.jpg");
+  height: 1500px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  color: maroon;
+  font-family: 'Mansalva';
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  color: maroon;
+  font-family: 'Satisfy';
+}
+
+h3 {
+  text-align: center;
+  margin-top: 80px;
+  color: maroon;
+  font-family: 'Satisfy';
+}
+
+#navbar {
+  top: 0;
+  position: relative;
+  width: 100%;
+}
+
+.tan-background {
+  background-color: tan;
+  height: 220px;
+}
+
+.footer-background {
+  background-color: #292929;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.highlight {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.dropp {
+  margin-top: 50px;
+}
