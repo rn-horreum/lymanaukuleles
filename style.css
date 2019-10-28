@@ -4,7 +4,7 @@
 
 .site-background {
   background-image: url("https://www.tokkoro.com/picsup/3101847-acoustic_classic_entertainment_fingerboard_folk_fretboard_hawaiian_instrument_leisure_music_musical_snail_song_strings_traditional_ukes_ukulele_vintage_wood.jpg");
-  height: 1500px;
+  height: 2500px;
   color: white;
 }
 
@@ -58,6 +58,8 @@ h4 {
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: 25px;
+  height: 200px;
 }
 
 .highlight {
@@ -71,8 +73,4 @@ h4 {
 
 p {
   color: black;
-}
-
-.dropp {
-  margin-top: 50px;
 }
