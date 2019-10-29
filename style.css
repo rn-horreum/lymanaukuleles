@@ -4,7 +4,19 @@
 
 .site-background {
   background-image: url("https://www.tokkoro.com/picsup/3101847-acoustic_classic_entertainment_fingerboard_folk_fretboard_hawaiian_instrument_leisure_music_musical_snail_song_strings_traditional_ukes_ukulele_vintage_wood.jpg");
-  height: 2500px;
+  height: 4000px;
+  color: white;
+}
+
+.site-background-shorter {
+  background-image: url("https://www.tokkoro.com/picsup/3101847-acoustic_classic_entertainment_fingerboard_folk_fretboard_hawaiian_instrument_leisure_music_musical_snail_song_strings_traditional_ukes_ukulele_vintage_wood.jpg");
+  height: 700px;
+  color: white;
+}
+
+.site-background-short {
+  background-image: url("https://www.tokkoro.com/picsup/3101847-acoustic_classic_entertainment_fingerboard_folk_fretboard_hawaiian_instrument_leisure_music_musical_snail_song_strings_traditional_ukes_ukulele_vintage_wood.jpg");
+  height: 1200px;
   color: white;
 }
 
