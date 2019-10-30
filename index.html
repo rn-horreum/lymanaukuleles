@@ -10,6 +10,14 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript"
           src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+
+  <style>
+    /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px;  /* The height is 400 pixels */
+      width: 70%;  /* The width is the width of the web page */
+    }
+  </style>
 </head>
 <body>
 <div class="ui grid tan-background"><a name="Top"></a>
@@ -68,10 +76,33 @@
 <h3 class="standard"><a name="Location">LOCATION & CONTACT</a></h3>
     <div class="ui two column grid container">
       <div class="column">
-    <div class="ui embed"  data-url="https://www.youtube.com/embed/voUZbJreMSQ"> </div>
+
+        <!--The div element for the map -->
+        <div id="map"></div>
+        <script>
+          // Initialize and add the map
+          function initMap() {
+            // The location of lymana
+            var lymana = {lat: 21.295738, lng:  -157.830180};
+            // The map, centered at lymana
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 18, center: lymana});
+            // The marker, positioned at lymana
+            var marker = new google.maps.Marker({position: lymana, map: map});
+          }
+        </script>
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGB5nnpkYB1S70nSHVlmCz_-tCDKZHilg&callback=initMap">
+        </script>
+
       </div>
-      <div class="column">
-      <p class="centered standard" style="padding-left: 155px;">
+      <div class="column" style="padding: 50px;">
+      <p class="standard" style="padding-left: 125px;">
         CONTACT INFO </p>
         <p class="standard" style="padding: 15px;">
           Phone Number : (808) 941-1690 </p>
@@ -93,7 +124,6 @@
 </div>
 </div>
   </div>
-
 
 <script>
   $('.ui.embed').embed();
