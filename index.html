@@ -14,18 +14,18 @@
   <style>
     /* Set the size of the div element that contains the map */
     #map {
-      height: 400px;  /* The height is 400 pixels */
+      height: 300px;  /* The height is 400 pixels */
       width: 70%;  /* The width is the width of the web page */
     }
   </style>
 </head>
 <body>
 <div class="ui grid tan-background"><a name="Top"></a>
-  <div class="four wide column" style="padding: 50px;">
+  <div class="three wide column" style="padding-left: 20px; padding-top: 55px">
     <img class="ui rounded image item" src="https://i.imgur.com/EKCgpHD.png">
   </div>
-  <div class="seven wide column" style="padding: 50px;">
-    <h2>LYMANA</h2> <h4>UKULELES</h4>
+  <div class="ten wide column" style="padding-top: 70px; padding-right: 0px; margin-right: 0px">
+    <h2>LYMANA</h2><h4>UKULELES</h4>
   </div>
   <div class="four wide column" style="text-align: right; margin-top: 50px; margin-bottom: 10px";>
     <h1>Aloha! Lymana Ukuleles are hand-crafted, custom instruments built locally here in Hawaii.</h1>
@@ -65,13 +65,24 @@
       </div>
     </div>
     <h3 class="standard"><a name="Demo">DEMO</a></h3>
-    <div class="ui embed" style="width: 600px; height: 300px; margin-left: 265px" data-source="youtube" data-id="tLHb0Kw6z5s"></div>
+    <div class="ui embed" style="width: 600px; max-height: 30px; margin-left: 265px" data-source="youtube" data-id="tLHb0Kw6z5s"></div>
 
 <h3 class="standard"><a>IN ACTION</a></h3>
 
-    <div class="ui embed"  data-url="https://www.youtube.com/embed/voUZbJreMSQ"> </div>
-
-    <div class="ui embed" style="margin-top: 25px;" data-url="https://www.youtube.com/embed/m0X3AANh8t4"> </div>
+    <div class="ui two column grid container">
+      <div class="column">
+        <div class="ui embed"  data-url="https://www.youtube.com/embed/voUZbJreMSQ"> </div>
+      </div>
+      <div class="column">
+        <div class="ui embed" data-url="https://www.youtube.com/embed/m0X3AANh8t4"> </div>
+      </div>
+      <div class="column">
+        <div class="ui embed" data-source="vimeo" data-id="176944509"> </div>
+      </div>
+      <div class="column">
+        <div class="ui embed" data-url="https://www.youtube.com/embed/BBrRBAY6PfI"> </div>
+      </div>
+    </div>
 
 <h3 class="standard"><a name="Location">LOCATION & CONTACT</a></h3>
     <div class="ui two column grid container">
@@ -100,8 +111,11 @@
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGB5nnpkYB1S70nSHVlmCz_-tCDKZHilg&callback=initMap">
         </script>
 
+        <p class="standard" style="margin-top: 10px; padding: 5px; font-size: small">
+          Note you may need to disable an Add Blocker to load the Google Maps </p>
+
       </div>
-      <div class="column" style="padding: 50px;">
+      <div class="column" style="padding: 30px;">
       <p class="standard" style="padding-left: 125px;">
         CONTACT INFO </p>
         <p class="standard" style="padding: 15px;">
@@ -114,7 +128,7 @@
     </div>
 
 <div class="footer-background">
-  <div class="column" style="font-size: 25px;">
+  <div class="column" style="font-size: 25px; padding-left: 30px">
     Site created by Computer Science student Roman Nicolai
     <hr/>
     <div class="ui relaxed list">
