@@ -3,7 +3,7 @@
 }
 
 .site-background {
-  background-image: url("https://www.tokkoro.com/picsup/3101847-acoustic_classic_entertainment_fingerboard_folk_fretboard_hawaiian_instrument_leisure_music_musical_snail_song_strings_traditional_ukes_ukulele_vintage_wood.jpg");
+  background-image: url("https://fsa.zobj.net/crop.php?r=aOl4BJP0qGOHPMU61qak5fXr9HO6NF3ifFzXRAWjSBHM93nKYE7ccJv7IfyPsCIOmdkXlyQDwcRGOnYpdeZ79jIVeFfYh1DVij_8eCqcOsHNHCDKOzzyKJlCaXEJo4AAxT4JD8EyBzufFa7n");
   height: 3100px;
   color: white;
 }
@@ -31,10 +31,11 @@ h1 {
 h2 {
   text-align: center;
   margin-top: 10px;
-  color: maroon;
+  color: saddlebrown;
   font-family: 'Times New Roman';
   font-style: italic;
   font-size: 80px;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 h3 {
@@ -62,11 +63,12 @@ h4 {
 
 .tan-background {
   background-color: tan;
+  background-image: url("https://i.pinimg.com/originals/87/b4/79/87b4796e187e369520444a61d6886ec0.jpg") !important;
   height: 220px;
 }
 
 .footer-background {
-  background-color: #292929;
+  background-color: saddlebrown;
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
