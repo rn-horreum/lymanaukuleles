@@ -1,11 +1,12 @@
+
 .beige-background-color {
   background-color: beige !important;
 }
 
 .site-background {
   background-image: url("https://fsa.zobj.net/crop.php?r=aOl4BJP0qGOHPMU61qak5fXr9HO6NF3ifFzXRAWjSBHM93nKYE7ccJv7IfyPsCIOmdkXlyQDwcRGOnYpdeZ79jIVeFfYh1DVij_8eCqcOsHNHCDKOzzyKJlCaXEJo4AAxT4JD8EyBzufFa7n");
-  height: 3100px;
   color: white;
+  background-repeat: repeat !important;
 }
 
 .site-background-shorter {
