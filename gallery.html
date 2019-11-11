@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lymana Ukuleles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Mansalva|Niconne|Satisfy|Knewave|Pacifico">
+  <link rel="shortcut icon" type="image/png" href=".idea/img/ukul.png">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+</head>
+
+<body>
+<container>
+  <div class="ui grid tan-background"><a name="Top"></a>
+    <div class="three wide column" style="padding-left: 20px; padding-top: 55px">
+      <img class="ui rounded image item" src=".idea/img/owlG.png">
+    </div>
+    <div class="twelve wide column" style="padding-top: 55px; padding-right: 0px; margin-right: 0px">
+      <h2>LYMANA UKULELES</h2>
+    </div>
+  </div>
+  <div id="navbar">
+    <div class="ui center aligned grid borderless topmenu menu beige-background-color" style="margin-top: 5px;">
+      <a class="item" href="index.html">HOME</a>
+    </div>
+  </div>
+  <div class="site-background">
+
+    <!-- Container for the image gallery -->
+    <div class="container-slide" style="padding-top: 50px;">
+
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src=".idea/gallery/cutaway.jpg" style="padding-left: 150px; width:50%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src=".idea/gallery/engelmann.jpg" style="width:50%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src=".idea/gallery/koatenor.jpg" style="width:50%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src=".idea/gallery/panama.jpg" style="width:50%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src=".idea/gallery/sunburst.jpg" style="width:50%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src=".idea/gallery/engelmann.jpg" style="padding-left: 150px; width:50%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption" style="color: white; padding: 2px 16px; font-size: 20px"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column-slide">
+          <img class="demo cursor" src=".idea/gallery/cutaway.jpg" style="width:100%" onclick="currentSlide(1)" alt="Cutaway">
+        </div>
+        <div class="column-slide">
+          <img class="demo cursor" src=".idea/gallery/engelmann.jpg" style="width:100%" onclick="currentSlide(2)" alt="Engelmann">
+        </div>
+        <div class="column-slide">
+          <img class="demo cursor" src=".idea/gallery/koatenor.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column-slide">
+          <img class="demo cursor" src=".idea/gallery/panama.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        <div class="column-slide">
+          <img class="demo cursor" src=".idea/gallery/sunburst.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+        </div>
+        <div class="column-slide">
+          <img class="demo cursor" src=".idea/gallery/engelmann.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="footer-background">
+      <div class="column" style="font-size: 15px; padding-left: 20px">
+        Site created by Computer Science student Roman Nicolai
+        <hr/>
+        <div class="ui relaxed list">
+          <a class="item"><a href="roman.html">
+            Roman's Portfolio</a></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+  </script>
+
+</container>
+</body>
+</html>

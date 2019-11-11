@@ -4,21 +4,9 @@
 }
 
 .site-background {
-  background-image: url("https://fsa.zobj.net/crop.php?r=aOl4BJP0qGOHPMU61qak5fXr9HO6NF3ifFzXRAWjSBHM93nKYE7ccJv7IfyPsCIOmdkXlyQDwcRGOnYpdeZ79jIVeFfYh1DVij_8eCqcOsHNHCDKOzzyKJlCaXEJo4AAxT4JD8EyBzufFa7n");
+  background-image: url("https://fsb.zobj.net/crop.php?r=N9YyF_7jAh9oGT-RRqr9pqKW5KrPOcnsxc01PFo1_LmsnniMeBvTJRWT6G7lo3UDro10CX7vg0oXSTtJREwfQ0IArVv1SKUhU1CpR9Ghlg3vEsr72aFSw7frcdADB4CyCEWwEvLw1AoLaLsBqvuDLK2XjceM-vg5aOrUBc5idF_yNal0hSAsdy1rWJilw2RY7bN_UV_NrTXBU9Sm");
   color: white;
   background-repeat: repeat !important;
-}
-
-.site-background-shorter {
-  background-image: url("https://www.tokkoro.com/picsup/3101847-acoustic_classic_entertainment_fingerboard_folk_fretboard_hawaiian_instrument_leisure_music_musical_snail_song_strings_traditional_ukes_ukulele_vintage_wood.jpg");
-  height: 700px;
-  color: white;
-}
-
-.site-background-short {
-  background-image: url("https://www.tokkoro.com/picsup/3101847-acoustic_classic_entertainment_fingerboard_folk_fretboard_hawaiian_instrument_leisure_music_musical_snail_song_strings_traditional_ukes_ukulele_vintage_wood.jpg");
-  height: 1200px;
-  color: white;
 }
 
 h1 {
@@ -32,11 +20,11 @@ h1 {
 h2 {
   text-align: center;
   margin-top: 10px;
-  color: saddlebrown;
+  color: yellowgreen;
   font-family: 'Times New Roman';
   font-style: italic;
   font-size: 80px;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h3 {
@@ -64,7 +52,7 @@ h4 {
 
 .tan-background {
   background-color: tan;
-  background-image: url("https://i.pinimg.com/originals/87/b4/79/87b4796e187e369520444a61d6886ec0.jpg") !important;
+  background-image: url(".idea/img/wave.jpg") !important;
   height: 220px;
 }
 
@@ -72,9 +60,9 @@ h4 {
   background-color: saddlebrown;
   color: white;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   margin-top: 25px;
-  height: 200px;
+  height: 115px;
 }
 
 .highlight {
@@ -88,4 +76,132 @@ h4 {
 
 p {
   color: black;
+}
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0.5);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container-slide {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column-slide {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
